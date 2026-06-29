@@ -1,6 +1,6 @@
-# Contributing to StellarVault
+# Contributing to StellarHomes
 
-Thank you for your interest in contributing to **StellarVault**! We welcome contributions of all kinds, including bug reports, feature requests, documentation improvements, frontend enhancements, and smart contract optimizations.
+Thank you for your interest in contributing to **StellarHomes**! We welcome contributions of all kinds, including bug reports, feature requests, documentation improvements, frontend enhancements, and smart contract optimizations.
 
 This guide outlines our development workflow, coding standards, and step-by-step instructions to ensure a smooth contribution process.
 
@@ -39,12 +39,12 @@ To get started, follow these steps:
 1. **Fork the Repository**: Create a personal copy of the repository on GitHub.
 2. **Clone the Fork**: Clone your fork to your local machine:
    ```bash
-   git clone https://github.com/<your-username>/StellarVault.git
-   cd StellarVault
+   git clone https://github.com/<your-username>/StellarHomes.git
+   cd StellarHomes
    ```
 3. **Set Up Upstream Remote**: Track the original repository to fetch the latest updates:
    ```bash
-   git remote add upstream https://github.com/dumbdev/StellarVault.git
+   git remote add upstream https://github.com/NeonsLabs/Stellar-Homes.git
    ```
 4. **Create a Feature Branch**: Never work directly on `main`. Create a descriptive branch (see [Git Branching Guidelines](#-git-branching--commit-guidelines)):
    ```bash
@@ -55,7 +55,7 @@ To get started, follow these steps:
 
 ## 🛠️ Development Workflows
 
-StellarVault is split into two primary environments: the **Soroban smart contracts** and the **Next.js web application**.
+StellarHomes is split into two primary environments: the **Soroban smart contracts** and the **Next.js web application**.
 
 ### Smart Contract Development (Rust/Soroban)
 
@@ -76,7 +76,7 @@ cargo build --target wasm32-unknown-unknown --release
 ```
 
 #### 2. Run Tests
-StellarVault uses Rust's built-in testing framework for unit and integration testing. Run tests with:
+StellarHomes uses Rust's built-in testing framework for unit and integration testing. Run tests with:
 ```bash
 # From the root directory:
 cargo test --manifest-path contracts/Cargo.toml
